@@ -98,3 +98,10 @@ ENV/
 
 # mypy
 .mypy_cache/
+/data/photos/p.jpg
+/data/photos/iris_setosa.jpg
+/data/photos/b.jpg
+/.gitignore
+/data/testdata.py
+.idea/
+/data/label_database.sqlite

@@ -23,6 +23,7 @@ def main():
     except RuntimeError as e:
         print(e)
 
+    print("That's all, folks!")
     lbase.close()
 
 
