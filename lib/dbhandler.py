@@ -35,9 +35,9 @@ class LabelBase:
     def create_scheme(self):
 
         for t in self.schema:
-            # add primary key
-            self.cursor.execute("CREATE TABLE {tname} ({pk} PRIMARY KEY)"
-                      .format(tname=t["tname"], pk=t["pk"]))
+            # add primary key and its data type
+            self.cursor.execute("CREATE TABLE {tname} ({pk} {pk_type} PRIMARY KEY)"
+                      .format(tname=t["tname"], pk=t["pk"][0], pk_type=t["pk"][1]))
             # add further columns
             for f in t["fields"]:
                 self.cursor.execute("ALTER TABLE {sp} ADD COLUMN '{fieldname}' {fieldtype}"
