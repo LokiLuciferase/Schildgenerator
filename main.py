@@ -2,11 +2,11 @@
 # Created by LokiLuciferase on 03/10/2017.
 #
 
-import sys
 import os
+import sys
 
 from lib.dbhandler import LabelBase
-from data.testdata import testdata
+from testing.testdata import testdata
 
 sys.path.insert(0, sys.path[0])
 

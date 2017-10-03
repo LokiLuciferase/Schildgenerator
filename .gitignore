@@ -102,6 +102,8 @@ ENV/
 /data/photos/iris_setosa.jpg
 /data/photos/b.jpg
 /.gitignore
-/data/testdata.py
+/testing/testdata.py
 .idea/
 /data/label_database.sqlite
+testing/labelset.html
+/testing/
