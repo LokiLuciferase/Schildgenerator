@@ -10,6 +10,8 @@ schema = [
                         ("max_wuchshoehe", "INTEGER"),
                         ("bluete", "TEXT"),
                         ("bluetezeit", "TEXT"),
+                        ("standort", "TEXT"),
+                        ("besonderheiten", "TEXT"),
                         ("preis", "REAL"),
                         ("foto", "TEXT")]
              },

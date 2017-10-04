@@ -7,6 +7,7 @@ import os
 
 from data.schema import schema
 
+
 # encapsulates methods and data of database
 class LabelBase:
     def __init__(self, location, create_new=False):
@@ -85,3 +86,20 @@ class LabelBase:
         if item:
             return item
         raise RuntimeError("No item was found with this primary key.")
+
+
+if __name__ == "__main__":
+
+    from testing.testdata import testdata
+
+    lbase = LabelBase("../data/label_database.sqlite", create_new=True)
+    for testitem in testdata:
+        print(lbase.add_row(tablename="Spezies", insertdic=testitem))
+
+    try:
+        print(lbase.get_entry("Borsten-Schwertlilie"))
+    except RuntimeError as e:
+        print(e)
+
+    print("That's all, folks!")
+    lbase.close()

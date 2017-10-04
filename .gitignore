@@ -107,3 +107,7 @@ ENV/
 /data/label_database.sqlite
 testing/labelset.html
 /testing/
+/__init__.py
+/testing/__init__.py
+/lib/__init__.py
+/data/__init__.py

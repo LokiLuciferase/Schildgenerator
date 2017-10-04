@@ -12,19 +12,7 @@ sys.path.insert(0, sys.path[0])
 
 
 def main():
-
-    lbase = LabelBase("./data/label_database.sqlite", create_new=True)
-
-    for testitem in testdata:
-        print(lbase.add_row(tablename="Spezies", insertdic=testitem))
-
-    try:
-        print(lbase.get_entry("Borsten-Schwertlilie"))
-    except RuntimeError as e:
-        print(e)
-
-    print("That's all, folks!")
-    lbase.close()
+    pass
 
 
 if __name__ == "__main__":
